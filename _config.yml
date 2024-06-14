@@ -21,16 +21,19 @@
 title: Andy McCall's Blog
 email: mailme@andymccall.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+   Join me, a passionate programmer with a love for retro game systems, as
+   I share my coding adventures and knowledge. Through this blog, I aim to
+   inspire and guide fellow programmers, especially those just starting their
+   journey. Expect a mix of personal experiences, programming tips, retro
+   gaming nostalgia, and hopefully, a supportive community where we can all
+   learn and grow together.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://andymccall.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: andymccall 
 github_username:  andymccall
 
 # Build settings
-theme: bulma-clean-theme
+theme: minima
 plugins:
   - jekyll-feed
 
