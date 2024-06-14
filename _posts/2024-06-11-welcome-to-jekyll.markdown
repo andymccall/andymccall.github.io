@@ -1,29 +1,17 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to my blog!"
 date:   2024-06-11 14:56:47 +0100
-categories: jekyll update
+categories: blog update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+I've finally made some time and created a new blog. I've done this for a few reasons. Firstly, I've been learning assembly and revisiting C on some neo-retro systems such as the Agon Light 2, NEO6502 and the Commander X16 and I wanted to write up some of my experiences so others can hopefully save some time.  I've also been going through the backlog of retro machines and restoring them and I wanted to document this too. I don't really expect anyone to read this blog. It's more of a personal write up to help me organise my thoughts and hopefully be more disciplined.
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+int main(void) {
+
+   printf("Hello, Blog!\n");
+
+   return 0;
+
+}
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
