@@ -33,7 +33,7 @@ twitter_username: andymccall
 github_username:  andymccall
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
