@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "More Agon Light 2 Acades"
+title:  "More Agon Light 2 Arcades"
 date:   2024-08-06 10:55:47 +0100
 categories: electronics retrocomputing agon basic
 ---
