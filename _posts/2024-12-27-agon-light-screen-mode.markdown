@@ -5,7 +5,7 @@ date:   2024-12-27 17:14:47 +0100
 categories: electronics retrocomputing agon basic
 ---
 
-I've been working on my assembly language skills in the last few weeks and wrote a little application to try various things on the Agon Light 2, such as displaying shapes and playing sounds.  Richard Turnnidge, who's got some excellent [YouTube videos](https://www.youtube.com/watch?v=NFgZcnyV8mU) and [assembly lessons](https://github.com/richardturnnidge/lessons), tried my application and pointed out to me  on the Discord channel that his original screen resolution wasn't restored after the application quit. I added that back to my code.
+I've been working on my assembly language skills in the last few weeks and wrote a [little application](https://github.com/andymccall/bitriotdev) to try various things on the Agon Light 2, such as displaying shapes and playing sounds.  Richard Turnnidge, who's got some excellent [YouTube videos](https://www.youtube.com/watch?v=NFgZcnyV8mU) and [assembly lessons](https://github.com/richardturnnidge/lessons), tried my application and pointed out to me  on the Discord channel that his original screen resolution wasn't restored after the application quit. I added that back to my code.
 
 Here's a clear example of how to do it.  You grab the current mode from the system variables, store the mode in memory and just before quitting set the mode back to whatever was stored.
 
