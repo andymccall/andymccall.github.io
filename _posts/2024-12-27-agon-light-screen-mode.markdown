@@ -5,11 +5,9 @@ date:   2024-12-27 17:14:47 +0100
 categories: electronics retrocomputing agon basic
 ---
 
-I've been working on my assembly language skills in the last few weeks and wrote a little application to try various things on the Agon Light 2, such as displaying shapes and playing sounds.  Richard Turnnidge, who's got some excellent [YouTube videos](https://www.youtube.com/watch?v=NFgZcnyV8mU) and [corresponding code](https://github.com/richardturnnidge/lessons), tried my application on the Discord channel and pointed out to me that his original screen resolution wasn't restored after the application quit, so I added that back to my code.
+I've been working on my assembly language skills in the last few weeks and wrote a little application to try various things on the Agon Light 2, such as displaying shapes and playing sounds.  Richard Turnnidge, who's got some excellent [YouTube videos](https://www.youtube.com/watch?v=NFgZcnyV8mU) and [assembly lessons](https://github.com/richardturnnidge/lessons), tried my application and pointed out to me  on the Discord channel that his original screen resolution wasn't restored after the application quit. I added that back to my code.
 
-Here's a clear example of how to do it.  You grab the current mode from the system variables, store the mode in memory and when quitting set the mode back to whatever was stored.
-
-Hopefully this will help someone in the future.
+Here's a clear example of how to do it.  You grab the current mode from the system variables, store the mode in memory and just before quitting set the mode back to whatever was stored.
 
 ```
 .assume adl=1
@@ -51,9 +49,9 @@ Hopefully this will help someone in the future.
     ; Send it to the VDP
     rst.lil $10
     ; Put 8 into the accumulator, which is 320x240x64
-	ld a, 8
+    ld a, 8
     ; Send it to the VDP, settings the screen mode
-	rst.lil $10
+    rst.lil $10
 
 ; Resore the previous screen mode
 
@@ -79,3 +77,5 @@ Hopefully this will help someone in the future.
 previous_screen_mode:
     .db 0
 ```
+
+Hopefully this will help someone in the future.
