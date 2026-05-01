@@ -87,7 +87,11 @@ I broke the Z down into four rectangles:
 
 That's six `DRAW_RECT` calls per Z phase advance instead of ~22 `DRAW_PIXEL` calls.  Worst case - all four Zs phase-advance in the same frame - is 24 firmware API calls, plus whatever the typer's still doing on its peak frame, total around 140 round-trips.  Comfortably under the threshold I'd been crashing into.
 
-After landing this, the snore types out cleanly, the A press registers and dismisses, and the Zs scatter properly through the centre 60% with a smooth fade.  Not pixel-identical to the X16 (those are real letter `Z` and `z` glyphs at the font's 8×8 size, mine are stylised 6×6 stepped Zs), but close enough that the cutscene reads the way I wanted.
+After landing this, the snore types out cleanly, the A press registers and dismisses, and the Zs scatter properly through the centre 60% with a smooth fade.  Not pixel-identical to the X16 (those are real letter `Z` and `z` glyphs at the font's 8×8 size, mine are stylised 6×6 stepped Zs), but close enough that the cutscene reads close to the way I wanted:
+
+<video src="/assets/images/20260501_neo6502_sleep.webm" controls width="640">
+Your browser does not support the video tag.
+</video>
 
 There's also a lesson here for when I get to the Agon Light 2 port: it's another firmware-mediated graphics path, so I'd expect similar dynamics.  Prefer the chunky one-call primitives like `DRAW_RECT` over per-pixel work, and keep an eye on the input-poll budget.
 
