@@ -5,7 +5,7 @@ date:   2026-05-02 10:00:00 +0100
 categories: retrocomputing assembly pcengine turbografx16 huc6280
 ---
 
-I've been doing a fair amount of homebrew and retro dev recently — most visibly on [From the Dead](https://github.com/andymccall/from-the-dead), the post-apocalyptic action-RPG I've been writing in pure assembly for the Commander X16, Neo6502 and Agon Light 2 — and it's got me thinking about which other 8 and 16-bit machines could reasonably host a port.  The one that keeps tugging at me is the **NEC PC Engine** (or **TurboGrafx-16** if you grew up the other side of the Atlantic).  Tiny HuCard, lovely sprite hardware, a 65xx-family CPU I'm already comfortable with — it ticks a lot of boxes.
+I've been doing a fair amount of homebrew and retro dev recently — most visibly on [From the Dead](https://github.com/andymccall/from-the-dead), the post-apocalyptic action-RPG I've been writing in pure assembly for the Commander X16, Neo6502 and Agon Light 2 — and it's got me thinking about which other 8 and 16-bit machines could reasonably host a port.  The one that keeps tugging at me is the **NEC PC Engine** (or **TurboGrafx-16** if you grew up the other side of the Atlantic).  Tiny HuCard, great sprite hardware, a 65xx-family CPU I'm already comfortable with — it ticks a lot of boxes.
 
 Before I commit to porting anything, though, I wanted to know what the development experience actually feels like.  Can I get a working build and run cycle on Linux?  Is there a debugger?  Will it slot into my normal VSCode workflow?  The cheapest way to answer all of that is to put together a project template, write a simple Hello, World, and see how the pieces fit.
 
