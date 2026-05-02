@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A PC Engine Hello-World Template"
-date:   2026-05-02 10:00:00 +0100
+date:   2026-05-02 08:51:00 +0100
 categories: retrocomputing assembly pcengine turbografx16 huc6280
 ---
 
